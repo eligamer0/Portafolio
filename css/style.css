@@ -1,0 +1,313 @@
+:root{
+    --secundario: #0097af;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  
+    font-size: 16px;
+    display: grid;
+    column-gap: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-color: #e7e5e5;
+}
+h1 {
+    margin: 8px;
+}
+h2 {
+    margin: 1rem auto;
+}
+div {
+    unicode-bidi: isolate;
+}
+img {
+    width: 240px;
+    aspect-ratio: auto 240 / 240;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+.foto {
+    position: relative;
+    padding: 10px auto;
+    margin: 10px;
+}
+.name {
+    font-size: 23px;
+}
+.apartadoContactos {
+    margin: 3rem;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    border-radius: 2rem; 
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.full {
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6f6;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-bottom: 1rem;
+}
+  
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.redes__ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.redes__item a {
+    text-decoration: none;
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: #f0f9fe;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border: 3px solid #f0f9fe;
+    overflow: hidden;
+}
+.redes__item a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 0;
+    scale: 1 0;
+    transform-origin: bottom;
+    transition: scale 0.5s ease;
+}
+.redes__item:hover a::before {
+    scale: 1 1;
+}
+.icon {
+    font-size: 2rem;
+    color: hsl(203, 92%, 8%);
+    transition: 0.5s ease;
+    z-index: 2;
+}
+.redes__item a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+.redes__item:nth-child(1) {
+    --bg-color: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
+}
+  .redes__item:nth-child(2) {
+    --bg-color: linear-gradient(to top, #12be52 0%, #25D366 100%);
+}
+.redes__item:nth-child(3) {
+    --bg-color: #0077b5;
+}
+  .redes__item:nth-child(4) {
+    --bg-color: #000000;
+}
+  .redes__item a:hover .icon-tabler {
+    stroke: #fff;
+}
+/* aqui termina el apartado de contactos */
+
+.contact-container {
+    margin-right: 5px;
+    background-color: whitesmoke;
+    border-radius: 16px;
+    text-align: left;
+    padding: 30px 15px;
+    margin: 20px 15px;
+  
+}
+.icon-container {
+    
+    border-bottom: 1px solid rgb(163, 158, 158);
+    margin-bottom: 10px;
+}
+.icon-container:last-child {
+    border-right: 0;
+}
+.icon-container ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+}
+.icon-container li {
+    margin-bottom: 10px;
+    transition: background-color .3s ease;
+}
+.icon-container i {
+    display: block;
+}
+.icon-contact:hover {
+    background-color: #1b74e4;
+    transition: background-color .3s ease;
+    color: #fff;
+}
+.icon-contact:hover .icon-tabler {
+    stroke: #fff;
+}
+.text {
+    display: block;
+}
+
+.icon-contact {
+    flex: 0 0 auto;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 5.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,.08);
+    transition: .3s;
+}
+.text span {
+    display: inline-block;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 3px;
+    color: rgb(163, 158, 158);
+}
+.text p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+    margin-bottom: 0;
+    text-decoration: none;
+
+}
+
+
+.btnDownload {
+    font-size: 35px;
+    border-color: #1b74e4;
+    height: 50px;
+  
+}
+.download-btn {
+    background-color: #1b74e4;
+    color: #fff;
+    padding: 14px 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    transition: background-color .3s ease;
+    content: attr(870px );
+}
+.download-btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid 1px;
+    border-color: #1b74e4;
+}
+.download-btn:hover .icon-tabler-download {
+    stroke: #000;
+    fill: #000;
+}
+.icon-tabler-download {
+    transition: background-color .3s ease;
+}
+
+.conexiones {
+    background-color: #fff;
+    border-radius: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* aquí abre el apartado "Sobre mí"  */
+
+.sobremi {
+    margin: 3rem;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 2rem;
+    text-align: left;
+}
+
+.proyectos {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto;
+    padding: 5px 30px;
+    
+}
+.proyectos h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30;
+    font-weight: 400
+
+}
+.proyectos p {
+    color: #566573;
+    font-size: 15px;
+    font-weight: 300;
+}
+.proyecto1 {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    background-color: #ebf5fb;
+    gap: 15px;
+    padding: 15px 10px;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #000;
+    text-align: left;
+
+} 
+.item1 {
+    grid-row: 1/span 2;
+    color: #aed6f1;
+}
+.titulo_proyecto1 {
+    justify-self: end;
+    text-align: right;
+}
+
+
+/* aquí termina la imformación */
+
+@media (min-width: 1199px) {
+    .todo {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      padding: 120px;
+    }
+  }
