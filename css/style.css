@@ -261,61 +261,106 @@ img {
     text-align: left;
 }
 
+
+/* CONTENEDOR GENERAL */
 .proyectos {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: auto auto;
-    padding: 5px 30px;
-    
+  padding: 40px 0;
 }
-.proyectos h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 30;
-    font-weight: 400
 
+/* LISTA */
+.lista-proyectos {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
-.proyectos p {
-    color: #566573;
-    font-size: 15px;
-    font-weight: 300;
-}
-.proyecto1 {
-    display: grid;
-    grid-template-columns: 20% 70%;
-    background-color: #ebf5fb;
-    gap: 15px;
-    padding: 15px 10px;
-    border-radius: 1rem;
-    text-decoration: none;
-    color: #000;
-    text-align: left;
 
-} 
-.item1 {
-    grid-row: 1/span 2;
-    color: #f5b7b1;
+/* CARD */
+.proyecto {
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.2s ease;
 }
-.titulo_proyecto1 {
-    justify-self: end;
-    text-align: right;
-}
-.proyecto2 {
-    display: grid;
-    grid-template-columns: 20% 70%;
-    background-color:#fadbd8;
-    gap: 15px;
-    padding: 15px 10px;
-    border-radius: 1rem;
-    text-decoration: none;
-    color: #000;
-    text-align: left;
 
-} 
-.item2 {
-    grid-row: 1/span 2;
-    color: #aed6f1;
+.proyecto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
+
+.header-proyecto {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.header-proyecto h3 {
+  font-size: 18px;
+  color: #24292f;
+}
+
+
+/* LINK INTERNO */
+.proyecto a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* ICONO */
+.proyecto svg {
+  margin-bottom: 10px;
+}
+
+/* TITULO */
+.proyecto h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #24292f;
+}
+
+/* DESCRIPCION */
+.proyecto p {
+  font-size: 14px;
+  color: #57606a;
+  margin-bottom: 12px;
+}
+
+/* TECNOLOGIA */
+.tech {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #57606a;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Círculo base */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Colores por tecnología */
+.react {background-color: #61DBFB;}
+.vite {background-color: #646CFF;}
+.javascript { background-color: #F7DF1E; }
+.css { background-color: #1572B6; }
+.html { background-color: #E34F26; }
+.php { background-color: #777BB4; }
+.sql { background-color: #4479A1; }
+.scss { background-color: #CC6699; }
+
+
 
 
 /* aquí termina la imformación */
@@ -326,4 +371,4 @@ img {
       grid-template-columns: 30% 70%;
       padding: 120px;
     }
-  }
+}
