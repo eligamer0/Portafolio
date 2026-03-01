@@ -253,12 +253,13 @@ img {
     background-color: #fff;
     border-radius: 2rem;
     padding-bottom: 3rem;
+    margin: 0 3rem 2rem;
 }
 
 /* aquí abre el apartado "Sobre mí"  */
 
 .sobremi {
-    margin: 0 3rem;
+    margin: 0 3rem 2rem;
     padding: 40px 30px;
     background-color: #fff;
     border-radius: 2rem;
