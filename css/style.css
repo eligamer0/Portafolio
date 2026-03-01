@@ -12,12 +12,14 @@ html {
     padding: 0;
     box-sizing: inherit;
 }
-
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.6rem;
-    background-color: #e7e5e5;
-    text-align: center;
+body { 
+    font-family: "Roboto", sans-serif; 
+    font-size: 1.6rem; 
+    background-image: url("../img/fondo.jpeg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    text-align: center; 
 }
 h1 {
     margin: 8px;
@@ -256,7 +258,7 @@ img {
 /* aquí abre el apartado "Sobre mí"  */
 
 .sobremi {
-    margin: 3rem;
+    margin: 0 3rem;
     padding: 40px 30px;
     background-color: #fff;
     border-radius: 2rem;
@@ -417,5 +419,6 @@ img {
       display: grid;
       grid-template-columns: 30% 70%;
       padding: 120px;
+      align-items: start;
     }
 }
